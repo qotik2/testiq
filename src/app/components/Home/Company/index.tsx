@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import Slider from 'react-slick'
 
 const Company = () => {
-  const [companyImg, setCompanyImg] = useState<string[]>([])
+  const [companyImg, setCompanyImg] = useState<{ imgSrc: string }[]>([])
 
   useEffect(() => {
     const fetchData = async () => {
