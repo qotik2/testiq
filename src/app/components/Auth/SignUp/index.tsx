@@ -1,8 +1,8 @@
 'use client'
 import Link from 'next/link'
 import SocialSignUp from '../SocialSignUp'
-import Logo from '@/app/components/Layout/Header/Logo'
 import { useState } from 'react'
+import Image from 'next/image'
 
 const SignUp = () => {  
   const [showCongrats, setShowCongrats] = useState(false);
@@ -16,7 +16,12 @@ const SignUp = () => {
   return (
     <>
       <div className='mb-10 text-center mx-auto inline-block'>
-        <Logo />
+        <Image
+          src={'/images/logo/net.gif'}
+          alt='dsign-logo'
+          width={120}
+          height={35}
+        />
       </div>
 
       <SocialSignUp />

@@ -9,6 +9,13 @@ const font = Poppins({
   weight: ['400', '500', '600', '700'],
 })
 
+export const metadata = {
+  title: 'y100k club - Профессиональное пугание по чатам',
+  icons: {
+    icon: '/images/favicon.jpg',
+  },
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
